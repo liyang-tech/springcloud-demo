@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="护理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="护理计划模版管理" transform="translate(-421.000000, -160.000000)">
+            <g id="加号呀" transform="translate(422.000000, 161.000000)">
+                <circle id="Oval-2" stroke="#E4E4E4" fill="#FFFFFF" cx="8" cy="8" r="8"></circle>
+                <path d="M8.5,8.5 L8.5,11.5 L8.5,12 L7.5,12 L7.5,11.5 L7.5,8.5 L4.9375,8.5 L4.5,8.5 L4.5,7.5 L4.9375,7.5 L7.5,7.5 L7.5,4.5 L7.5,4 L8.5,4 L8.5,4.5 L8.5,7.5 L11.0625,7.5 L11.5,7.5 L11.5,8.5 L11.0625,8.5 L8.5,8.5 Z" id="Combined-Shape" fill="#D8D8D8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

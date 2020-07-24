@@ -1,0 +1,16 @@
+server.port: 8018
+spring:
+  application.name: personal-bes-manage
+#  cloud:
+#    config:
+#      uri: http://localhost:8888/  #config-server访问路径
+#      label: ${config.label:dev}  #文件夹名
+#      name: personal-bes-manage
+#      profile: ${config.profile:dev}  #后缀
+#eureka.client.serviceUrl:
+#  defaultZone: http://localhost:8761/eureka
+#eureka.instance.statusPageUrlPath: /swagger-ui.html
+#eureka:
+#  instance:
+#    lease-renewal-interval-in-seconds: 10
+#    lease-expiration-duration-in-seconds: 5

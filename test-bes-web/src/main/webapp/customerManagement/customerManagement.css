@@ -1,0 +1,87 @@
+html,body{
+	overflow-y: auto;
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.tkHeader{height:30px;
+		   border-bottom:1px solid #ddd;
+		   margin-bottom:15px;}
+
+.Checkp{
+ font-weight:bold;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 5px;
+} 
+.footer_img{
+	  position: absolute;
+ 	  z-index: 9;
+ 	  left: 5px;
+      top: 3px;
+}
+
+.tkTable{
+	  margin-top: 20px;
+}
+ #task_Modal .modal-header{
+	padding-top:0px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	height:21px;
+	padding-left: 12px;
+	background:#f0f0f0;
+	border-radius: 4px;
+	border:none;
+}
+#task_Modal .modal-body{
+	padding:0px;
+	padding-left: 12px;
+	padding-bottom: 20px;
+	padding-right:12px;
+}
+#task_Modal .modal-body table{
+	width:100%;
+	margin:0;
+	padding:0;
+	margin-top:12px;
+	
+}
+#task_Modal .modal-footer{
+	padding-right:5px;
+    border-top: 0px;
+}
+.table-bordered th {text-align: center;
+  /* font-size: 13px; */
+  line-height: 16px;
+  color: #8d9eff;}
+.table-bordered td {text-align: center;}
+
+.inputPadding{padding-left: 25px;}
+.textarea1{height: 80px;}
+.col-sm-10 {
+	padding-left: 0;
+}
+.master-form{
+	 float: left;
+	 width: 50%;;
+}
+em{
+	background: transparent;
+}
+.botflex.jedatehms{
+	opacity: 0 !important;
+}
+ul.botflex.jedatehms{
+	display: none;
+}
+div..botflex.jedatehms{
+	float: right;
+}
+#jedatebox{
+	width: 20.8%;
+	margin-left: 3px;
+}

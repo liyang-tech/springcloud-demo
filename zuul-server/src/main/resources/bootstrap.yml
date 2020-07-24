@@ -1,0 +1,22 @@
+server.port: 8019
+spring: 
+  application.name: zuul-server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+zuul:
+  routes:
+    app:
+      path: /tkrsbes/**
+      service-id: personal-bes-manage
+      strip-prefix: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

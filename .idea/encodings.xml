@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cis-sdk/src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/euraka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/euraka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/personal-bes-manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/personal-bes-manage/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-bes-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-bes-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-bes-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-bes-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-cust-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-cust-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-master-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-master-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-rmq-listen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-rmq-listen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-rmq-sender/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-rmq-sender/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-user-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-user-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-server/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

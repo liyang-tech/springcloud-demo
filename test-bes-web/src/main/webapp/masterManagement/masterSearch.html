@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1"/>
+		<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+		<title>主数据查询</title>
+		
+		<link href="../lib/bootstrap/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+		<link href="../lib/bootstrap/css/bootstrap-select.css" type="text/css"  rel="stylesheet" />
+		<link href="../lib/smarttable/smart-table.css" type="text/css"  rel="stylesheet" />
+		<link href="../css/myPagination.css" type="text/css"  rel="stylesheet" />
+		<link href="../css/base.css" type="text/css"  rel="stylesheet" />
+		<link href="../css/winpop.css" type="text/css"  rel="stylesheet" />
+		<link href="../lib/jeDate/skin/jedate.css" type="text/css"  rel="stylesheet" />
+		<link href="masterManagement.css" type="text/css" rel="stylesheet" />
+		
+	</head>
+	<body ng-app="myApp" ng-controller="masterController" ng-cloak>
+	
+		<div class="Wrapper">
+			<!-- 头部 -->
+			<div class="tkNav">
+				<div class="tkHeader">
+					<span class="Checkp">主数据查询</span>
+				</div>
+			</div>
+			<!-- 查询条件及按钮 -->
+			<div class="tkbtnGroup">
+				<span>数据对象:</span>
+				<select class="form-control1" ng-model="objectCd" style="width: 15%; margin-right: 10px;">
+					<option value=''>--请选择数据对象--</option>
+					<option ng-repeat="mstType in objectList" value="{{mstType.code}}">{{mstType.name}}</option>
+				</select>
+				<span>主数据编码:</span>
+				<span style="position: relative;" class="inputGroup">
+					<img src="../images/icons/search-icon0.svg" class="footer_img">
+					<input type="text" style="width: 15%; margin-right: 10px;" class="form-control1 inputPadding" ng-model="code" />
+				</span>
+				<!-- <span>婚姻状态:</span>
+				<select class="form-control1" ng-model="marriedCd" style="width: 15%; margin-right: 10px;">
+					<option value='' >--请选择婚姻状态--</option>
+					<option ng-repeat="mstType in mstMarriyList" value="{{mstType.code}}">{{mstType.name}}</option>
+				</select> -->
+				<span>名称或拼音简码:</span>
+				<span style="position: relative;" class="inputGroup">
+					<img src="../images/icons/search-icon0.svg" class="footer_img">
+					<input type="text" style="width: 15%; margin-right: 10px;" class="form-control1 inputPadding" ng-model="keyword" />
+				</span>
+				<button class="but searchBut" ng-click="searchMaster()">查询</button>
+			</div>
+			<!-- 主体部分 -->
+			<div class="tkContent">
+
+				<div class="tkTable">
+					<table class="prescriptionTable tableCssStyle" st-table="displayed">
+						<thead>
+							<tr>
+								<th>序号</th>
+								<th>对象编码</th>
+								<th>对象名称</th>
+								<th>编码</th>
+								<th>名称</th>
+								<th>描述</th>
+								<th>拼音简码</th>
+								<th>排序号</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="master in masterList" >
+								<td>{{$index+1}}</td>
+								<td>{{master.objectCd}}</td>
+								<td>{{master.objectNm}}</td>
+								<td>{{master.code}}</td>
+								<td>{{master.name}}</td>
+								<td>{{master.des}}</td>
+								<td>{{master.spellNo}}</td>
+								<td>{{master.sortNo}}</td>
+							</tr>
+						</tbody>
+					</table>
+					<div ng-hide="stepTotalPages<=1" style="margin-top: 15px; display: block;" class="infoPage">
+						<pagination-smart-table num-pages="stepTotalPages" current-page="stepNumber" max-size="maxSize" items-by-page="size" items-by-pages="sizes" boundary-links="false" previous-text="上一页" next-text="下一页" go-page-flag="goPageFlag"></pagination-smart-table>
+					</div>
+				</div><!-- <div class="tkTable"> -->
+			</div><!-- <div class="tkContent"> -->
+		</div><!-- <div class="Wrapper"> -->
+	
+		<!--主数据管理新增模态框  -->
+		<div class="modal fade" id="add_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="padding: 8px 15px">
+						<button type="button" class="close addClose" data-dismiss="modal" aria-hidden="true" ng-click="cancelMaster()">
+		                  &times;
+		            </button>
+						<p class="modal-title" id="myModalLabel" style="font-size:15px;">
+							主数据新增
+						</p>
+					</div>
+					<div class="modal-body">
+						<div class="modal-div">
+							<form class="form-horizontal wardForm">
+							
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>编码:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="addMasterVo.code" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>名称:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="addMasterVo.name" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">描述:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="addMasterVo.des" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">拼音简码:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="addMasterVo.spellNo" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">排序号:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="addMasterVo.sortNo" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>数据对象:</label>
+									<select  class="form-control1" ng-model="addMasterVo.objectCd" style="width:47.5%;">
+										<option value=''>---请选择数据对象---</option>
+										<option ng-repeat="mstType in objectList" value="{{mstType.code}}">{{mstType.name}}</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="an" >
+							<button class="butAE" id="confirm" ng-click="addMaster()">保存</button>
+							<button class="but1" id="cancle" data-dismiss="modal" ng-click="cancelMaster()">取消</button>
+						</div>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 新增 主数据信息 modal 结束 -->
+		
+		
+		<!--主数据管理变更模态框  -->
+		<div class="modal fade" id="edit_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="padding: 8px 15px">
+						<button type="button" class="close addClose" data-dismiss="modal" aria-hidden="true" >
+		                  &times;
+		            </button>
+						<p class="modal-title" id="myModalLabel" style="font-size:15px;">
+							主数据编辑
+						</p>
+					</div>
+					<div class="modal-body">
+						<div class="modal-div">
+							<form class="form-horizontal wardForm">
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>编码:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="alterMstVo.code" class="form-control1" id="inputEmail3" disabled="disabled">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>名称:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="alterMstVo.name" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">描述:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="alterMstVo.des" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">拼音简码:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="alterMstVo.spellNo" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label">排序号:</label>
+									<div class="col-sm-10 master-form">
+										<input type="text" ng-model="alterMstVo.sortNo" class="form-control1" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group">
+									<label style="padding-top: 3px;" for="inputEmail3" class="col-sm-2 control-label"><span style="color:red;">*</span>数据对象:</label>
+									<select  class="form-control1" ng-model="alterMstVo.objectCd" style="width:47.5%;" disabled="disabled">
+										<option value='' >---请选择数据对象---</option>
+										<option ng-repeat="mstType in objectList" value="{{mstType.code}}">{{mstType.name}}</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="an" >
+							<button class="butAE" id="confirm" ng-click="editMaster()">保存</button>
+							<button class="but1" id="cancle" data-dismiss="modal" >取消</button>
+						</div>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 编辑 主数据信息 modal 结束 -->
+	
+	
+	</body>
+	
+	<script src="../lib/eventBus/EventBus-3.0.js"></script>
+	<script src="../lib/jquery/jquery-1.11.1.min.js"></script>
+	<script src="../lib/jquery/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../lib/bootstrap/js/bootstrap-select.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../interface/interfacesConfig.js"></script>
+	<script src="../lib/angular/angular.js"></script>
+	<script src="../lib/angular/angular-ui-tree.min.js"></script>
+	<script src="../lib/angular/angular-ui-router.js"></script>
+	<script src="../lib/angular/ui-bootstrap-tpls.js"></script>
+	<script src="../lib/angular/angular-cookies.min.js"></script>
+	<script src="../lib/smarttable/smart-table.js"></script>
+	<script src="../lib/smarttable/my-smart-table.js"></script>
+	<script src="../js/masterManagement/masterManagement.js"></script>
+	<script src="../js/common.js"></script>
+	
+	<script src="../js/taggedAutogrow.js"></script>
+	<script src="../js/winpop.js"></script>
+	<!-- angularjs  file upload -->
+	<script src="../lib/ng-file-upload/ng-file-upload-shim.min.js"></script>
+	<script src="../lib/ng-file-upload/ng-file-upload.min.js"></script>
+	
+	<script src="../lib/smarttable/Smart-Table.debug.js"></script>
+	<script src="../lib/jeDate/jedate.js"></script>
+	
+	<script src="../lib/base64/jquery.base64.js"></script>
+</html>

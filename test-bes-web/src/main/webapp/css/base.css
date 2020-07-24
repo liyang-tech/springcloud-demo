@@ -1,0 +1,378 @@
+html,
+body {
+	overflow-y: auto;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+body,
+html {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 13px;
+	font-family: "Microsoft YaHei" !important;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+
+button,
+input,
+select,
+textarea {
+	margin: 0 auto;
+	font-size: 13px;
+	font-family: "Microsoft YaHei" !important;
+	overflow: hidden;
+	-webkit-user-select: text;
+}
+
+textarea {
+	overflow: hidden;
+	resize: none;
+}
+
+.form-control1 {
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	padding: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	line-height: 1.42857143;
+	outline: none;
+	box-shadow: none;
+	transition: border 1s, box-shadow 1s;
+}
+
+.form-control1:focus {
+	border: 1px solid #3ab0c8;
+	box-shadow: 0px 0px 3px rgba(141, 158, 255, 0.4);
+}
+
+.align-C{
+	text-align: center!important;
+}
+
+td a {
+	color: #007896;
+	margin: 0 7px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+/*表格统一颜色*/
+
+.tableCssStyle {
+	 width: 100%;
+ 	 box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+ 	 border-collapse: collapse;
+  	 border-spacing: 0;
+	
+}
+
+.tableCssStyle th {
+   background: #f6f6f6;
+  color: #646464;
+  font-weight: bold;
+  text-align: left;
+  font-size: 13px;
+  line-height: 16px;
+  border: 1px solid #eee;
+  padding: 8px 7px 8px 7px;
+}
+.tableCssStyle td {
+  position: relative;
+  border: 1px solid #eee;
+  line-height: 20px;
+  text-align: left;
+  padding: 8px 7px 8px 7px;
+  vertical-align: top;
+  cursor: pointer;
+  word-break: break-all;}
+  
+  
+.tableCssStyle tbody tr:hover {
+	  background: rgba(141,158,255,0.28);
+}
+
+/*.tableStyle th {
+	background: #f6f6f6;
+	color: #8d9eff;
+	font-weight: normal;
+}*/
+
+
+/*搜索按钮*/
+
+.but {
+  outline: none;
+  text-align: center;
+  background-color: #0ca4f0;
+  border-radius: 4px;
+  padding: 0px 12px;
+  height: 24px;
+  line-height: 22px;
+  margin-right: 7px;
+  color: #fff;
+  border: 1px solid #0ca4f0;
+  transition: background 1s;
+}
+
+.but:hover {
+	  background-color: #7081e2;
+  /* box-shadow: 0px 1px 2px #19a3c5 inset; */
+}
+
+.but:active {
+	  /* box-shadow: 0px 1px 2px #19a3c5 inset; */
+    background-color: #4f63d5;
+}
+
+/*新增编辑按钮*/
+.butAE{
+  outline: none;
+  text-align: center;
+  background-color: #0abc5e;
+  border-radius: 4px;
+  padding: 0px 12px;
+  height: 26px;
+  line-height: 22px;
+  margin-right: 7px;
+  color: #fff;
+  border: 1px solid #0abc5e;
+  transition: background 0.5s
+}
+
+.butAE:hover {
+  border: 1px solid #009b37;
+  background-color: #009b37;
+  box-shadow: none;
+}
+
+.butAE:active {
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2) inset;
+  background-color: #1b7700;
+}
+
+/*删除按钮*/
+.butD{
+  outline: none;
+  text-align: center;
+  background-color: #ff236c;
+  border-radius: 4px;
+  padding: 0px 12px;
+  height: 25px;
+  line-height: 22px;
+  margin-right: 7px;
+  color: #fff;
+  border: 1px solid #ff236c;
+  transition: background 0.5s
+}
+
+.butD:hover {
+  background-color: #de034c;
+  box-shadow: none;
+  border: 1px solid #de034c;
+}
+
+.butD:active {
+  border: 1px solid #bf0028;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2) inset;
+  background-color: #bf0028;
+}
+
+
+/*表格统一样式*/
+.prescriptionTable {
+	width: 100%;
+}
+
+.prescriptionTable tr:hover {
+	background: rgba(141, 158, 255, 0.05);
+}
+
+.prescriptionTable th {
+	text-align: left;
+	font-size: 13px;
+	line-height: 16px;
+	border: 1px solid #eee;
+	padding: 8px 7px 8px 7px;
+}
+
+.prescriptionTable td {
+	position: relative;
+	border: 1px solid #eee;
+	line-height: 20px;
+	text-align: left;
+	padding: 8px 7px 8px 7px;
+	font-size: 13px;
+	/*vertical-align:top;*/
+}
+
+a:link,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #007896;
+}
+
+a {
+	color: #007896;
+	cursor: pointer;
+}
+
+.tableCssStyle td a:hover {
+  color: #0abc5e;
+  font-weight: bold !important;
+}
+
+.editS{
+	text-align: center!important;
+}
+.numberS{
+	text-align: right!important;
+}
+.sexS{
+	text-align: center!important;
+}
+
+
+/*自定义滚动条*/
+
+::-webkit-scrollbar-track-piece {
+	background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	/*滚动条的宽度*/
+	height: 6px;
+	/*滚动条的高度*/
+}
+
+::-webkit-scrollbar-thumb {
+	/*滚动条的样式*/
+	height: 50px;
+	background-color: #c8c8c8;
+	-webkit-border-radius: 4px;
+	border: 2px solid;
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	/*滚动条的hover样式*/
+	height: 50px;
+	background-color: rgba(164, 164, 164, 1);
+	-webkit-border-radius: 4px;
+}
+
+.pull-bottom {
+	margin-bottom: 20px;
+}
+
+.Wrapper {
+	width: 100%;
+	padding-left: 16px;
+	min-height: 500px;
+}
+
+.routerArea {
+	overflow: auto !important;
+}
+
+/*.tkTable {
+	margin-top: 20px;
+	margin-right: 16px;
+}*/
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+	display: none ! important;
+}
+
+
+/*.pull-right{
+	float: right!important;
+}
+.pull-left{
+	float: left!important;
+}*/
+
+
+/*白底蓝字按钮*/
+
+.but1 {
+	outline: none;
+	padding: 0px 12px;
+	height: 24px;
+	line-height: 22px;
+	background: none;
+	margin-right: 7px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	color: #5cbace;
+	transition: background 1s;
+}
+
+.but1:hover {
+	box-shadow: 0px 1px 1px #f0f0f0 inset;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.but1:active {
+	background-color: #f6f6f6;
+}
+
+
+/*黑字白底按钮*/
+
+.but3 {
+	outline: none;
+	padding: 0 12px;
+	margin-right: 7px;
+	height: 24px;
+	line-height: 22px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	color: #363636;
+	transition: background 1s;
+}
+
+.but3:hover {
+	box-shadow: 0px 1px 1px #f0f0f0 inset;
+	background-color: #fafafa;
+}
+
+.but3:active {
+	background-color: #f6f6f6;
+}
+
+
+/*禁用按钮*/
+
+.but2 {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	color: #c8c8c8;
+	font-size: 13px;
+	background: none;
+	padding: 0 12px;
+	height: 24px;
+	line-height: 22px;
+	margin-right: 7px;
+}
+
+.tkTable{
+	   padding-right: 10px;
+}

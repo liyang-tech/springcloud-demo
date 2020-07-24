@@ -1,0 +1,3 @@
+server.port: 8017
+spring:
+  application.name: test-rmq-sender

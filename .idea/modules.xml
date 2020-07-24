@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cis-sdk/cis-sdk.iml" filepath="$PROJECT_DIR$/cis-sdk/cis-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-server/euraka-server.iml" filepath="$PROJECT_DIR$/euraka-server/euraka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personal-bes-manage/personal-bes-manage.iml" filepath="$PROJECT_DIR$/personal-bes-manage/personal-bes-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-bes-app/test-bes-app.iml" filepath="$PROJECT_DIR$/test-bes-app/test-bes-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-bes-web/test-bes-web.iml" filepath="$PROJECT_DIR$/test-bes-web/test-bes-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-cust-domain/test-cust-domain.iml" filepath="$PROJECT_DIR$/test-cust-domain/test-cust-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-master-domain/test-master-domain.iml" filepath="$PROJECT_DIR$/test-master-domain/test-master-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-rmq-listen/test-rmq-listen.iml" filepath="$PROJECT_DIR$/test-rmq-listen/test-rmq-listen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-rmq-sender/test-rmq-sender.iml" filepath="$PROJECT_DIR$/test-rmq-sender/test-rmq-sender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-user-domain/test-user-domain.iml" filepath="$PROJECT_DIR$/test-user-domain/test-user-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

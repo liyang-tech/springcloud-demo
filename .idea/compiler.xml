@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test-bes-app" />
+        <module name="test-user-domain" />
+        <module name="test-master-domain" />
+        <module name="personal-bes-manage" />
+        <module name="config-server" />
+        <module name="euraka-server" />
+        <module name="zuul-server" />
+        <module name="test-rmq-listen" />
+        <module name="test-cust-domain" />
+        <module name="cis-sdk" />
+        <module name="test-bes-web" />
+        <module name="test-rmq-sender" />
+        <module name="config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cis-sdk" target="1.8" />
+      <module name="config" target="1.5" />
+      <module name="config-server" target="1.8" />
+      <module name="euraka-server" target="1.8" />
+      <module name="personal-bes-manage" target="1.8" />
+      <module name="test-bes-app" target="1.8" />
+      <module name="test-bes-web" target="1.8" />
+      <module name="test-cust-domain" target="1.8" />
+      <module name="test-master-domain" target="1.8" />
+      <module name="test-rmq-listen" target="1.8" />
+      <module name="test-rmq-sender" target="1.8" />
+      <module name="test-user-domain" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /swagger-ui.html
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: liyang
+      password: liyang
+      database: cust
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: yang
+    password: yang
+    virtual-host: WCG-92
+wcg.mq.sender: X.WCG.RMQModify

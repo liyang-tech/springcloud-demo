@@ -1,0 +1,15 @@
+server.port: 8012
+spring:
+  application.name: test-user-domain
+#  cloud:
+#    config:
+#      name: test-user-domain  #前缀 jdbc,test扫描俩
+#      profile: ${config.profile:dev}  #后缀
+#      label: ${config.label:dev}  #文件夹名
+#      uri: http://localhost:8888/  #config-server访问路径
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#  instance:
+#    status-page-url-path: /swagger-ui.html

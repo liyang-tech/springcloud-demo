@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <!-- 数据库连接jar包 位置 -->
+  <classPathEntry location="E:\Java\jar\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar"/>
+
+  <context id="mysqlTables" targetRuntime="MyBatis3">
+    <!-- 数据库的连接 -->
+    <jdbcConnection connectionURL="jdbc:mysql://localhost/masterdb" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+   
+    <!-- 指定生成的类型为Java类型，避免数据库中number等类型字段 -->
+    <javaTypeResolver>
+    	<property name="forceBigDecimals" value="false"/>
+    </javaTypeResolver>
+    
+    <!-- 生成的model模型，存放的位置 -->
+    <javaModelGenerator targetPackage="com.wcg.caoxian.master.model" targetProject="test-master-domain/src/main/java" >
+    	<property name="enableSubPackages" value="false"/>
+    </javaModelGenerator>
+    
+    <!-- 生成的mapper.xml文件 存放的位置 -->
+    <sqlMapGenerator targetPackage="mappers" targetProject="test-master-domain/src/main/resources" >
+    	<property name="enableSubPackages" value="false"/>
+    </sqlMapGenerator>
+    
+    <!-- 生成的mapper.java文件  存放的位置 -->
+    <javaClientGenerator targetPackage="com.wcg.caoxian.master.dao" targetProject="test-master-domain/src/main/java" type="XMLMAPPER" >
+    	<property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+    
+    <!-- 数据库中的表 及生成的对应的实体对象名 -->
+    <table tableName="mst_master" domainObjectName="Master"
+    		enableCountByExample="false" enableUpdateByExample="false"
+    		enableSelectByExample="false" enableDeleteByExample="false"
+    		selectByExampleQueryId="false">
+      <property name="useActualColumnNames" value="false"/>
+    </table>
+    
+  </context>
+</generatorConfiguration>

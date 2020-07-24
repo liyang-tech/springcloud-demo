@@ -1,0 +1,88 @@
+package com.wcg.caoxian.bes.vo.mastervo;
+
+import java.util.Date;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel("MasterReAndUpVo")
+public class MasterReAndUpVo {
+
+	@ApiModelProperty(value="数据对象编码")
+	private String objectCd;
+	
+	@ApiModelProperty(value="主数据编码")
+	private String code;
+	
+	@ApiModelProperty(value="主数据名称")
+	private String name;
+	
+	@ApiModelProperty(value="描述")
+	private String des;
+	
+	@ApiModelProperty(value="拼音简码")
+	private String spellNo;
+	
+	@ApiModelProperty(value="排序号")
+	private String sortNo;
+	
+	@ApiModelProperty(value="最后修改时间", hidden=true)
+	private Date lastUpdatedTime;
+
+	public String getObjectCd() {
+		return objectCd;
+	}
+
+	public void setObjectCd(String objectCd) {
+		this.objectCd = objectCd;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDes() {
+		return des;
+	}
+
+	public void setDes(String des) {
+		this.des = des;
+	}
+
+	public String getSpellNo() {
+		return spellNo;
+	}
+
+	public void setSpellNo(String spellNo) {
+		this.spellNo = spellNo;
+	}
+
+	public String getSortNo() {
+		return sortNo;
+	}
+
+	public void setSortNo(String sortNo) {
+		this.sortNo = sortNo;
+	}
+
+	public Date getLastUpdatedTime() {
+		return lastUpdatedTime;
+	}
+
+	public void setLastUpdatedTime(Date lastUpdatedTime) {
+		this.lastUpdatedTime = lastUpdatedTime;
+	}
+	
+}

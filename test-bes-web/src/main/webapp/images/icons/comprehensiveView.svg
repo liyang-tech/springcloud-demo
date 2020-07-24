@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#color-overlay-1);
+        opacity: 1;
+      }
+
+      .cls-2 {
+        stroke: #8d9eff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill: none;
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <path d="M2.784,2.230 L5.094,2.230 C5.492,2.230 5.814,2.552 5.814,2.950 L5.814,5.267 C5.814,5.665 5.492,5.987 5.094,5.987 L2.784,5.987 C2.386,5.987 2.064,5.665 2.064,5.267 L2.064,2.950 C2.064,2.552 2.386,2.230 2.784,2.230 Z" class="cls-2"/>
+    <path d="M8.830,2.230 L11.140,2.230 C11.537,2.230 11.860,2.552 11.860,2.950 L11.860,5.267 C11.860,5.665 11.537,5.987 11.140,5.987 L8.830,5.987 C8.432,5.987 8.109,5.665 8.109,5.267 L8.109,2.950 C8.109,2.552 8.432,2.230 8.830,2.230 Z" class="cls-2"/>
+    <path d="M2.784,8.492 L5.094,8.492 C5.492,8.492 5.814,8.815 5.814,9.213 L5.814,11.530 C5.814,11.928 5.492,12.250 5.094,12.250 L2.784,12.250 C2.386,12.250 2.064,11.928 2.064,11.530 L2.064,9.213 C2.064,8.815 2.386,8.492 2.784,8.492 Z" class="cls-2"/>
+    <path d="M8.830,8.492 L11.140,8.492 C11.537,8.492 11.860,8.815 11.860,9.213 L11.860,11.530 C11.860,11.928 11.537,12.250 11.140,12.250 L8.830,12.250 C8.432,12.250 8.109,11.928 8.109,11.530 L8.109,9.213 C8.109,8.815 8.432,8.492 8.830,8.492 Z" class="cls-2"/>
+  </g>
+</svg>

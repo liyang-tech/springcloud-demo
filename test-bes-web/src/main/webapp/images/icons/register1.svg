@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>注册1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="泰康长期照护系统" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-256.000000, -114.000000)" stroke="#8BA0FF">
+            <g id="注册1" transform="translate(257.000000, 115.000000)">
+                <g id="Group-3" transform="translate(6.000000, 7.000000)" stroke-linecap="round">
+                    <path d="M2.5,0.5 L2.5,4.5" id="Line"></path>
+                    <path d="M0.5,2.5 L4.5,2.5" id="Line"></path>
+                </g>
+                <path d="M6.66299126,6.13439214 C6.28810355,6.04635297 5.89901384,6 5.5,6 C2.46243388,6 0,8.6862915 0,12" id="Oval-2" stroke-linecap="round"></path>
+                <circle id="Oval" cx="5.5" cy="2.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

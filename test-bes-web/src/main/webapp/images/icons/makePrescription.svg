@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#color-overlay-1);
+      }
+
+      .cls-2 {
+        stroke: #8d9eff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill: none;
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <path d="M10.865,10.074 C10.865,11.765 10.865,12.830 10.865,12.830 C10.865,13.214 10.564,13.526 10.193,13.526 L2.127,13.526 C1.756,13.526 1.455,13.214 1.455,12.830 L1.455,2.152 C1.455,1.768 1.756,1.456 2.127,1.456 L10.193,1.456 C10.564,1.456 10.865,1.768 10.865,2.152 C10.865,2.152 10.865,2.711 10.865,3.251 " class="cls-2"/>
+    <path d="M3.323,3.237 L5.563,3.237 " class="cls-2"/>
+    <g>
+      <path d="M10.077,5.041 L5.800,9.472 L5.483,11.442 L7.384,11.114 L11.662,6.682 L10.077,5.041 " class="cls-2"/>
+      <path d="M6.341,8.912 L7.925,10.553 " class="cls-2"/>
+    </g>
+  </g>
+</svg>
