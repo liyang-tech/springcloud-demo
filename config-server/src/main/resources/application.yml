@@ -6,13 +6,17 @@ spring:
   cloud:
     config:
       server:
-        svn:
-          uri: https://localhost:9090/svn/MyItems/config
-          username: admin
-          password: admin
-      enabled: true
-  profiles:
-    active: subversion
+        git:
+          uri: https://github:com/liyang-tech/springcloud-demo/tree/master/config
+          username: liyang-tech
+          password: YANG2fei1314
+#        svn:
+#          uri: https://localhost:9090/svn/MyItems/config
+#          username: admin
+#          password: admin
+#      enabled: true
+#  profiles:
+#    active: subversion
 eureka:
   client:
     register-with-eureka: true
