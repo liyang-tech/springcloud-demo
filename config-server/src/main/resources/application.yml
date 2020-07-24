@@ -7,22 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github:com/liyang-tech/springcloud-demo/tree/master/config
+          uri: https://github:com/liyang-tech/springcloud-demo/config
           username: liyang-tech
           password: YANG2fei1314
-#        svn:
-#          uri: https://localhost:9090/svn/MyItems/config
-#          username: admin
-#          password: admin
-#      enabled: true
-#  profiles:
-#    active: subversion
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-  instance:
-    prefer-ip-address: true
-    status-page-url: /info.html
