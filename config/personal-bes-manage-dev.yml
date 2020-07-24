@@ -3,7 +3,7 @@ spring:
     name: manage
     url: jdbc:mysql://localhost:3306/manage?useSSL=false&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: root
+    password: password
   data:
     mongodb:
       host: localhost
